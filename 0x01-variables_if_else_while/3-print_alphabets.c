@@ -6,16 +6,22 @@
  */
 int main(void)
 {
-int i;
-int j;
+char c = 'a';
 
-for (i = 0; i < 2; i++)
+while (c <= 'z')
 {
-for (j = i * 32 + 97; j <= i * 32 + 122; j++)
+putchar(c);
+c++;
+}
+
+c = 'A';
+
+while (c <= 'Z')
 {
-putchar(j);
+putchar(c);
+c++;
 }
-}
+
 putchar('\n');
 
 return (0);
