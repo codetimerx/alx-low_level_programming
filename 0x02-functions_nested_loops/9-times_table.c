@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_digits_table - prints a multiplication table for the digits 0-9
- *                      
+ * times_table - prints a multiplication table for the digits 0-9                     
  */
 
 void times_table(void)
@@ -17,7 +16,7 @@ _putchar(i + '0');
 _putchar(',');
 _putchar(j + '0');
 _putchar(' ');
- }
+}
 _putchar('\n');
 }
 }
