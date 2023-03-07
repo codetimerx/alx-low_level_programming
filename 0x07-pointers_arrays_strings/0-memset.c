@@ -15,7 +15,6 @@ while (n--)
 {
 *ptr++ = b;
 }
-
-return s;
+return (s);
 }
 
