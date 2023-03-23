@@ -16,14 +16,12 @@ char cval;
 int ival;
 double dval;
 char *sval;
-
 va_start(args, format);
-
 for (f = format; *f != '\0'; ++f)
 {
 if (*f == 'c')
 {
-cval = (char) va_arg(args, int);
+cval = (char)va_arg(args, int);
 printf("%c", cval);
 }
 else if (*f == 'i')
@@ -40,18 +38,12 @@ else if (*f == 's')
 {
 sval = va_arg(args, char *);
 if (sval == NULL)
-{
 printf("(nil)");
-}
 else
-{
 printf("%s", sval);
 }
-}
 if (*(f + 1) != '\0' && (*f == 'c' || *f == 'i' || *f == 'f' || *f == 's'))
-{
 printf(", ");
-}
 }
 va_end(args);
 printf("\n");
