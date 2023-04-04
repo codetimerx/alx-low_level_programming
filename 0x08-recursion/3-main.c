@@ -1,20 +1,22 @@
-
 #include "main.h"
-/**
- * _puts_recursion - prints a string followed by \n
- * @s:string
- * Return:0
- */
-void _puts_recursion(char *s)
-{
-if (*s)
-{
-_putchar(*s);
-_puts_recursion(s + 1);
-}
-else
-{
-_putchar('\n');
-}
+#include <stdio.h>
 
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    int r;
+
+    r = factorial(1);
+    printf("%d\n", r);
+    r = factorial(5);
+    printf("%d\n", r);
+    r = factorial(10);
+    printf("%d\n", r);
+    r = factorial(-1024);
+    printf("%d\n", r);
+    return (0);
 }
